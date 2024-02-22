@@ -17,4 +17,4 @@ function openImage(imageUrl) {
   img.src = imageUrl;
 }
 
-openImage('./images/image01.jpg');
+
