@@ -20,23 +20,35 @@ function openImage(imageUrl) {
 
 document.addEventListener('DOMContentLoaded', function () {
   var searchInput = document.querySelector('.search-box input');
-  
+  var searchIcon = document.querySelector('.search-box .icon');
+  var searchStatus = document.querySelector('.search-status');
+
   searchInput.addEventListener('keyup', function (event) {
       if (event.key === 'Enter') {
           performSearch();
       }
   });
 
-  var searchIcon = document.querySelector('.search-box .icon');
   searchIcon.addEventListener('click', function () {
       performSearch();
   });
-  
+
   function performSearch() {
       var searchTerm = searchInput.value;
+
+      // Mostrar a mensagem de aguarde
+      searchStatus.textContent = '  Aguarde enquanto faz a pesquisa...';
+
       if (searchTerm.trim() !== '') {
-          var searchUrl = 'https://helpcenter.ila.cegid.com/?s=' + encodeURIComponent(searchTerm);
-          window.location.href = searchUrl;
+          // Simular um atraso para a pesquisa (você pode remover isso no ambiente de produção)
+          setTimeout(function () {
+              var searchUrl = 'https://helpcenter.ila.cegid.com/?s=' + encodeURIComponent(searchTerm);
+              // Redirecionar para a URL de pesquisa
+              window.location.href = searchUrl;
+          }, 1000); // Atraso de 1 segundo (1000 milissegundos)
+      } else {
+          // Se o campo de pesquisa estiver vazio, ocultar a mensagem de aguarde
+          searchStatus.textContent = '';
       }
   }
 });
