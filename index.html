@@ -1,83 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-pt"
     class="html_stretched responsive av-default-lightbox html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky_disabled html_header_shrinking_disabled html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-full html_av-submenu-noclone html_entry_id_9564 av-cookies-no-cookie-consent av-no-preview avia_desktop js_active avia_transform avia_transform3d avia_transform avia_transform3d avia-webkit avia-webkit-67 avia-chrome avia-chrome-67">
+    <head>
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="./main.css" />
-    <title>Manual de Utilizador</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="./main.js"></script>
+        <title>Manual de Utilizador</title>
+        
+        </head>
+        
+        <body>
 
-</head>
-
-<body>
-    <main>
         <div class="header-1">
-            <div class="logo">
-                <img src="./images/rsz_logoextenso.png" />
-            </div>
-        </div>
-    </main>
-    
-    <script src="./main.js"></script>
+            <main>
+                <div class="logo">
+                    <img src="./images/rsz_logoextenso.png" />
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Pesquisar...">
+                        <a href="##" class="icon">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    </div>
 
-    <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
-        <div class="avia_textblock post_content_ul " itemprop="text">
-            <p></p>
-            <h2 id="criarcontratos">Criar contratos</h2>
-            <p>Um contrato de Compra ou Venda, associado a um Cliente/Outro Devedor ou a um Fornecedor/Outro Credor,
-                permite definir as várias condições de fornecimento de Produtos ou Serviços, caso se trate de um
-                contrato de venda ou de aquisição de Produtos/Serviços, caso se trate de um contrato de compra.</p>
-            <p>Podem ser definidas as características seguintes:</p>
-            <ul>
-                <li class="li_list_pkp"><strong>Validade:</strong>&nbsp;configura-se um período para o qual o contrato é
-                    válido;</li>
-                <li class="li_list_pkp"><strong>Estado: </strong>define&nbsp;o estado atual em que se encontra o
-                    Contrato (Novo, Orçamentado, Recusado, Ativo-Faturação Ativa, Ativo-Faturação Suspensa);</li>
-                <li class="li_list_pkp"><strong>Condições Comerciais: </strong>&nbsp;tais como a moeda, modo e condições
-                    de pagamento, descontos;</li>
-                <li class="li_list_pkp"><strong>Contabilização: </strong>a forma como&nbsp;um contrato é contabilizado,
-                    nomeadamente o projeto, a conta, o centro de custos, etc.;</li>
-                <li class="li_list_pkp"><strong>Garantias</strong> <strong>contratuais associadas ao
-                        contrato:</strong>&nbsp;estas podem ser obrigatórias ou facultativas.</li>
-            </ul>
-            <p>Para criar um contrato, siga os seguintes passos:</p>
-            <ol>
-                <li class="li_seq_pkp">Aceder a <strong>Serviços |&nbsp;Contratos&nbsp;| Contratos</strong>;</li>
-                <div>
-                    <p>
-                        <img id="thumbnail01" src="./images/image01.jpg" alt="Thumbnail Image" onclick="openImage('./images/image01.jpg')">
-                    </p>
-                </div>
-                
-                <li class="li_seq_pkp">Indicar o <strong>Documento</strong> e&nbsp;a <strong>Série</strong> que definem
-                    o contrato;</li>
-                <li class="li_seq_pkp">Identificar a <strong>referência</strong> do contrato;</li>
-                <li class="li_seq_pkp">Identificar&nbsp;a <strong>Entidade</strong>&nbsp;associada ao contrato;</li>
-                <li class="li_seq_pkp">No separador <strong>Gerais,</strong> definir os critérios de validade do
-                    contrato:<br>
-                    - <strong>Período</strong>: intervalo de datas de validade do contrato;<br>
-                    - <strong>Renovável</strong>: indica se o contrato deve ser renovável;</li>
-                <li class="li_seq_pkp">Definir o <strong>valor</strong> do contrato, bem como a moeda do mesmo;</li>
-                <li class="li_seq_pkp">Se o contrato está associado a um <strong>projeto,</strong> é possível fazer essa
-                    associação;</li>
-                <li class="li_seq_pkp">Para contratos de venda, indicar o <strong>responsável</strong> pelo contrato
-                    (vendedor), bem como a<strong> oportunidade de venda</strong> que lhe deu origem;</li>
-                <li class="li_seq_pkp">No separador <strong>Condições Comercias,</strong> definir as mesmas;</li>
-                <li class="li_seq_pkp">No separador <strong>Contabilidade,</strong> definir as regras que vão ser depois
-                    copiadas para os documentos;</li>
-                <li class="li_seq_pkp">No separador <strong>Observações</strong>, inserir informações adicionais ao
-                    contrato;</li>
-                <li class="li_seq_pkp">No separador <strong>Garantias</strong>, associar as garantias aplicáveis ao
-                    contrato;<br>
-                    <strong>Nota</strong>: Poderá adicionar o valor da garantia;
-                </li>
-                <li class="li_seq_pkp">No separador<strong> CCP</strong>, definir os dados referentes ao Código de
-                    Contrato Público associado ao contrato</li>
-                <li class="li_seq_pkp">Por fim, clicar em<strong> Gravar</strong>.</li>
-
-            </ol>
+</main>
         </div>
-    </section>
-</body>
+        
+
+        <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+            <div class="avia_textblock post_content_ul " itemprop="text">
+                <p></p>
+                <h2 id="criarcontratos">Criar contratos</h2>
+                <p>Um contrato de Compra ou Venda, associado a um Cliente/Outro
+                    Devedor ou a um Fornecedor/Outro Credor,
+                    permite definir as várias condições de fornecimento de
+                    Produtos ou Serviços, caso se trate de um
+                    contrato de venda ou de aquisição de Produtos/Serviços, caso
+                    se trate de um contrato de compra.</p>
+                <p>Podem ser definidas as características seguintes:</p>
+                <ul>
+                    <li class="li_list_pkp"><strong>Validade:</strong>&nbsp;configura-se
+                        um período para o qual o contrato é
+                        válido;</li>
+                    <li class="li_list_pkp"><strong>Estado:
+                        </strong>define&nbsp;o estado atual em que se encontra o
+                        Contrato (Novo, Orçamentado, Recusado, Ativo-Faturação
+                        Ativa, Ativo-Faturação Suspensa);</li>
+                    <li class="li_list_pkp"><strong>Condições Comerciais:
+                        </strong>&nbsp;tais como a moeda, modo e condições
+                        de pagamento, descontos;</li>
+                    <li class="li_list_pkp"><strong>Contabilização: </strong>a
+                        forma como&nbsp;um contrato é contabilizado,
+                        nomeadamente o projeto, a conta, o centro de custos,
+                        etc.;</li>
+                    <li class="li_list_pkp"><strong>Garantias</strong>
+                        <strong>contratuais associadas ao
+                            contrato:</strong>&nbsp;estas podem ser obrigatórias
+                        ou facultativas.
+                    </li>
+                    </ul>
+                    <p>Para criar um contrato, siga os seguintes passos:</p>
+                    <ol>
+                    <li class="li_seq_pkp">Aceder a <strong>Serviços
+                            |&nbsp;Contratos&nbsp;| Contratos</strong>;</li>
+                    <div>
+                        <p>
+                            <img id="thumbnail01" src="./images/image01.jpg" alt="Thumbnail Image" onclick="openImage('./images/image01.jpg')">
+                            </p>
+                            </div>
+
+                    <li class="li_seq_pkp">Indicar o <strong>Documento</strong>
+                        e&nbsp;a <strong>Série</strong> que definem
+                        o contrato;</li>
+                    <li class="li_seq_pkp">Identificar a
+                        <strong>referência</strong> do contrato;
+                    </li>
+                    <li class="li_seq_pkp">Identificar&nbsp;a
+                        <strong>Entidade</strong>&nbsp;associada ao
+                        contrato;
+                    </li>
+                    <li class="li_seq_pkp">No separador <strong>Gerais,</strong>
+                        definir os critérios de validade do
+                        contrato:<br>
+                        - <strong>Período</strong>: intervalo de datas de
+                        validade do contrato;<br>
+                        - <strong>Renovável</strong>: indica se o contrato deve
+                        ser renovável;</li>
+                        <li class="li_seq_pkp">Definir o <strong>valor</strong> do
+                            contrato, bem como a moeda do mesmo;</li>
+                        <li class="li_seq_pkp">Se o contrato está associado a um
+                            <strong>projeto,</strong> é possível fazer essa
+                            associação;
+                        </li>
+                        <li class="li_seq_pkp">Para contratos de venda, indicar o
+                            <strong>responsável</strong> pelo contrato
+                            (vendedor), bem como a<strong> oportunidade de
+                                venda</strong> que lhe deu origem;
+                        </li>
+                        <li class="li_seq_pkp">No separador <strong>Condições
+                                Comercias,</strong> definir as mesmas;</li>
+                        <li class="li_seq_pkp">No separador
+                            <strong>Contabilidade,</strong> definir as regras que
+                            vão ser depois
+                            copiadas para os documentos;
+                        </li>
+                        <li class="li_seq_pkp">No separador
+                            <strong>Observações</strong>, inserir informações
+                            adicionais ao
+                            contrato;
+                        </li>
+                        <li class="li_seq_pkp">No separador
+                            <strong>Garantias</strong>, associar as garantias
+                            aplicáveis ao
+                            contrato;<br>
+                        <strong>Nota</strong>: Poderá adicionar o valor da
+                        garantia;
+                        </li>
+                    <li class="li_seq_pkp">No separador<strong> CCP</strong>,
+                        definir os dados referentes ao Código de
+                        Contrato Público associado ao contrato</li>
+                    <li class="li_seq_pkp">Por fim, clicar em<strong>
+                            Gravar</strong>.</li>
+                    
+                    </ol>
+                    </div>
+            
+                    </section>
+<div id="searchResults">
+    <!-- Resultados da pesquisa -->
+</div>
+<footer>
+    <!-- endereço web e data  -->
+</footer>
+
+    </body>
 
 </html>

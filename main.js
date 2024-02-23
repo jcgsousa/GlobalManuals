@@ -15,3 +15,28 @@ function openImage(imageUrl) {
   
   img.src = imageUrl;
 }
+
+/* pesquisa no primavera*/
+
+document.addEventListener('DOMContentLoaded', function () {
+  var searchInput = document.querySelector('.search-box input');
+  
+  searchInput.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+          performSearch();
+      }
+  });
+
+  var searchIcon = document.querySelector('.search-box .icon');
+  searchIcon.addEventListener('click', function () {
+      performSearch();
+  });
+  
+  function performSearch() {
+      var searchTerm = searchInput.value;
+      if (searchTerm.trim() !== '') {
+          var searchUrl = 'https://helpcenter.ila.cegid.com/?s=' + encodeURIComponent(searchTerm);
+          window.location.href = searchUrl;
+      }
+  }
+});

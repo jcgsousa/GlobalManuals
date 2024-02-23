@@ -1,3 +1,5 @@
+
+
 #thumbnail01 {
     cursor: pointer;
     position: relative;
@@ -6,38 +8,12 @@
     height: 197px;
   }
   
-  
-  body { 
-          overflow-x: hidden; 
-  }
-   
-  main{
-  width: 980;
-  } 
-  
-  .logo {
-      position: fixed;
-      
-      width: auto;
-      top: 0;
-      left: 0;
-      width: 100%;
-      margin-left: 65;    
-      padding: 0.9px;    
-      background-color: #f0f0f0; 
-      z-index: 1000; 
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  
-  }
-  
-  
-  .header-1 {
-      margin-top: 40px; 
-  }
-  
+
+
   
   .header-2 h2 {
       position: relative;
+      top: 0;
       font-family: 'Verdana', sans-serif;
       color:saddlebrown;
       font-size: 22px;
@@ -71,10 +47,11 @@
   p {
       line-height: 20px;
   }
-  
+  */
   
   
   /* imagem expandida */
+
   .image-container {
       position: relative;
   }
@@ -103,3 +80,88 @@
       cursor: pointer;
   }
   
+  
+    
+  body { 
+    overflow-x: hidden; 
+}
+
+.header-1    { 
+    /* position: fixed;*/
+  /*  position: absolute;*/
+     margin-top: 50px; 
+ }
+   
+
+ main{
+    position: relative;
+    width: 980;
+    } 
+      
+    
+  
+  .logo   {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.9px;    
+    background-color: #f0f0f0; 
+    z-index: 1000; 
+    
+
+}
+
+
+
+/* pesquisa dinâmica */
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%);
+    background: #2C3441;
+    height: 22px;
+    border-radius: 22px;
+    padding: 5px;
+    }
+.search-box:hover > input{
+    
+    width: 200px;
+    padding: 0 10px;
+}
+
+.search-box:hover > .icon{
+background: #536179;
+}
+
+.icon:hover{
+    transform: rotate(360deg) scale(0.8);
+}
+input{
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+    line-height: 22px;
+    color: #FFFF;
+}
+
+.icon{
+    color: rgb(224, 144, 40);
+    float: right;
+    width: 22px;
+    height: 22px;
+    font-size: 1.3rem;
+    border-radius: 22%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
