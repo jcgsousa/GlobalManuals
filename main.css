@@ -165,3 +165,24 @@ input{
     cursor: pointer;
     text-decoration: none;
 }
+
+.search-status{
+    background: #f0f0f0;
+    font: bold;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.search-status {
+    animation: blink 1s infinite; 
+}

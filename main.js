@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var searchTerm = searchInput.value;
 
       // Mostrar a mensagem de aguarde
-      searchStatus.textContent = '  Aguarde enquanto faz a pesquisa...';
+      searchStatus.textContent = '  Aguarde, a pesquisar no HelpCenter Primavera...';
 
       if (searchTerm.trim() !== '') {
           // Simular um atraso para a pesquisa (você pode remover isso no ambiente de produção)
