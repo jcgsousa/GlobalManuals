@@ -122,14 +122,14 @@
     left: 70%;
     transform: translate(-50%,-50%);
     background: #2C3441;
-    height: 22px;
-    border-radius: 22px;
-    padding: 5px;
+    height: 19px;
+    border-radius: 19px;
+    padding: 2px;
     }
 .search-box:hover > input{
     
     width: 200px;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .search-box:hover > .icon{
@@ -154,8 +154,8 @@ input{
 .icon{
     color: rgb(224, 144, 40);
     float: right;
-    width: 22px;
-    height: 22px;
+    width: 19px;
+    height: 19px;
     font-size: 1.3rem;
     border-radius: 22%;
     background: #2f3640;
