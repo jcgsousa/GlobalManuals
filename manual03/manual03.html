@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-pt"
+    class="html_stretched responsive av-default-lightbox html_header_top html_logo_left html_main_nav_header html_menu_right html_slim html_header_sticky_disabled html_header_shrinking_disabled html_mobile_menu_phone html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-full html_av-submenu-noclone html_entry_id_9564 av-cookies-no-cookie-consent av-no-preview avia_desktop js_active avia_transform avia_transform3d avia_transform avia_transform3d avia-webkit avia-webkit-67 avia-chrome avia-chrome-67">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles03.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js03.js"></script>
+    <title>Manual 03</title>
+</head>
+
+<body>
+    <div class="header-1">
+        <main>
+            <div class="logo">
+                <img src="./imgm03/rsz_logoextenso.png" />
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar...">
+                    <a href="#" class="icon">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="search-status"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <section class="av_textblock_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+        <div class="avia_textblock post_content_ul" itemprop="text">
+            <h2 class="code-line"
+                style="-webkit-text-stroke-width:0px;background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);font-family:&quot;Segoe WPC&quot;, &quot;Segoe UI&quot;, sans-serif;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;letter-spacing:normal;orphans:2;position:relative;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;"
+                data-line="31" id="Título01"><span style="color:#0d47a1;">Extensibilidade Primavera - Número Automático
+                    de Clientes e Fornecedores</span></h2>
+
+            <p>Add-on "CustomizeNewPriCliFor.dll" para o sistema Primavera, visando a
+                numeração automática de clientes e fornecedores mediante configuração de máscara.</p>
+
+            <h3>Registar e configurar a extensibilidade "CustomizeNewPriCliFor.dll"</h3>
+            <p>Após efetuar o registo da dll deve fechar e abrir novamente a aplicação primavera para que sejam
+                criados corretamente os campos necessários à configuração da numeração automática.</p>
+            <p>
+                <img id="thumbnail01" src="./imgm03/image031.jpg" alt="Thumbnail Image"
+                    onclick="openImage('./imgm03/image031.jpg')">
+            </p>
+            <p>Ao aceder a primeira vez ao editor de Clientes/Fornecedores, irá ser apresentado o configurador da
+                numeração.</p>
+            <p>
+                <img id="thumbnail01" src="./imgm03/image032.jpg" alt="Thumbnail Image"
+                    onclick="openImage('./imgm03/image032.jpg')">
+            </p>
+            <p>Seguindo o exemplo acima após clicar em "Numeração Automática", deve preencher a máscara pretendida
+                de acordo com as necessidades e tendo em conta que caso deseje efetuar a criação
+                automática das contas de contabilidade, o número de digitos não pode ser superior aos
+                digitos usados na máscara de CBL. A máscara de CBL é apresentada caso exista algum exercício
+                contabilístico já criado (<strong>211SD????</strong>).
+            </p>
+
+            <p>As máscaras a usar na numeração podem incluir alfanuméricos no ínicio e
+                no final da máscara desejada que é representada por <strong>zeros(0...)</strong>.
+                Alguns exemplos de máscaras:
+            </p>
+            <ul>
+                <li><strong>0000</strong> - máscara simples 4 dígitos </li>
+                <li><strong>CL0000</strong> - máscara composta, 2 alfanuméricos + 4 dígitos </li>
+                <li><strong>CL0000I</strong> - máscara composta, 2 alfanuméricos + 4 dígitos + 1 alfanumérico</li>
+            </ul>
+
+            <p>O formato da máscara pode ter variantes dentro dos exemplos acima, o que não pode ter
+                é dígitos intercalados com valores alfanuméricos, por exemplo: <strong>CL000N0</strong>
+                este tipo de <strong>máscara é inválida</strong> e não pode ser utilizada.
+            </p>
+
+            <p>Assim caso se pretenda a criação automática das contas de CBL basta marcar a check box <strong>"Gera
+                    Conta CBL"</strong> </p>
+
+
+            <p>Em relação à check box <strong>"Forçar Último Número Gerado"</strong>, deve ser utilizado em
+                circunstâncias muito
+                especificas e tendo sempre atenção em usar o maior número inteiro da numeração atual. Isto porque o
+                incremento da numeração
+                é feito de forma automática a partir desse valor inteiro utilizado. </p>
+
+            <p>Abaixo temos um exemplo de como pode ser utilizado o forçar da numeração, supondo que estão a ser criados
+                clientes
+                aleatoriamente e sem regra na numeração. </p>
+
+            <p>
+                <img id="thumbnail01" src="./imgm03/image033.jpg" alt="Thumbnail Image"
+                    onclick="openImage('./imgm03/image034.jpg')">
+            </p>
+
+            <p>Supondo que o último cliente criado foi o <strong>"1267"</strong>, e o
+                último número inteiro dessa numeração é o <strong>"7999"</strong>, ao definirmos o
+                <strong>"7999"</strong> como sendo
+                o valor a partir do qual a sequência numérica irá continuar o próximo número de "Cliente" neste caso
+                será o
+                <strong>"8000"</strong>.
+            </p>
+
+            <p>
+                <img id="thumbnail01" src="./imgm03/image034.jpg" alt="Thumbnail Image"
+                    onclick="openImage('./imgm03/image034.jpg')">
+            </p>
+
+            <p>Depois de gravar as configurações e fechar a aplicação primavera e voltar a abrir. Na abertura do editor
+                de clientes
+                já irá ter como sugestão de número de cliente: <strong>"8000"</strong>.
+            </p>
+
+            <p>Ao gravar a criação do novo cliente caso tenha ativa a criação automática de contas CBL irá surgir a
+                mascara
+                de abertura de contas para confirmar, sem existir a necessidade de indicar o número de conta na aba
+                <strong>"Contabilidade - Conta Contabilidade"</strong>.
+            </p>
+            
+            <p>
+                <img id="thumbnail01" src="./imgm03/image035.jpg" alt="Thumbnail Image"
+                    onclick="openImage('./imgm03/image035.jpg')">
+            </p>
+
+            <h2>Acesso ao configurador de numeração automática</h2>
+
+            <P>Pode aceder ao configurador no editor de Clientes/Fornecedores, no Drop-Down de
+                <strong>"Contexto"</strong>
+                botão <strong>"Config. Novo Cliente" ou "Config. Novo Fornecedor" </strong>, consoante o editor </P>
+
+                
+                <p>
+                    <img id="thumbnail01" src="./imgm03/image036.jpg" alt="Thumbnail Image"
+                        onclick="openImage('./imgm03/image036.jpg')">
+                </p>
+
+            <p> </p>
+
+        </div>
+    </section>
+
+    <div id="searchResults">
+        <!-- Resultados da pesquisa -->
+    </div>
+    <footer>
+        <!-- endereço web e data  -->
+    </footer>
+</body>
+
+</html>
