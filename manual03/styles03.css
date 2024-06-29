@@ -33,13 +33,13 @@
   
   
   p  {
-      font-size: 18px;
+      font-size: 14px;
       color: dimgrey;
       }
   
   ol {
       
-      font-size: 17px;
+      font-size: 14px;
       color: dimgrey;
       line-height: 20px;
   }
@@ -47,6 +47,19 @@
   p {
       line-height: 20px;
   }
+
+  ol {
+    font-weight: bold; /* Torna toda a lista em negrito */
+}
+
+ol li {
+    font-weight: normal; /* Retorna o texto do item para normal */
+}
+
+ol li::marker {
+    font-weight: bold; /* Mantém apenas o número em negrito */
+}
+  
   */
   
   
