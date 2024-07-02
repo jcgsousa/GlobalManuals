@@ -138,44 +138,21 @@
             <h2>Importante</h2>
             <p>A cada nova máscara criada o numerador inicia, o que significa que caso já exista uma numeração anterior e esta se
                 encontra ligada à <strong>CBL</strong>, irá existir uma sobreposição de contas aquando da sua criação. </p>
-            <p>Como tal e para evitar esse problema, deve criar manualmente o novo cliente com a nova máscara desejada e forçar esse
-                cliente criado na configuração da numeração automática, para que a partir daí a numeração seja sequencial e sem o
-                problema de colidir com o número de conta <strong>CBL</strong> já criado.</p>
-            <p>Exemplo abaixo: </p>
-            <p>Supondo que temos a máscara atual definida como <strong>“0000”</strong> e o numerado se encontra no
-                <strong>“8000”</strong>, e queremos alterar a
-                máscara para <strong>“C0000”</strong>. Se colocarmos essa máscara o próximo numerador será <strong>“C0001”</strong>.
-                Não está correto já que a
-                numeração anterior tem contas <strong>CBL</strong> associadas com toda a numeração menor que
-                <strong>“8000”</strong>. </p>
+                <p> </p>
+                <p><strong>A ter em conta:</strong> </p>
             
             <ol>
-                <li> Vamos desativar a numeração automática reiniciar a aplicação e criar o cliente <strong>“C8001”</strong>;</li>
-                <p>
-                    <img id="thumbnail01" src="./imgm03/image037.jpg" alt="Thumbnail Image"
-                        onclick="openImage('./imgm03/image037.jpg')">
-                </p>
-            
-                <p>
-                    <img id="thumbnail01" src="./imgm03/image038.jpg" alt="Thumbnail Image"
-                        onclick="openImage('./imgm03/image038.jpg')">
-                </p>
-                <li>Após a criação do cliente <strong>“C8001”</strong>feita de forma manual, vamos voltar ao configurador e registar a
-                    nova
-                    máscara e forçar o último cliente criado com o código <strong>“C8001”</strong>, fechar a aplicação e volta a abrir e
-                    ao voltar ao
-                    editor de clientes já terá o próximo código de cliente com o valor <strong>“C8002”</strong>;</li>
-                <p>
-                    <img id="thumbnail01" src="./imgm03/image039.jpg" alt="Thumbnail Image"
-                        onclick="openImage('./imgm03/image039.jpg')">
-                </p>
-            
-                <li>O incremento do numerador já está de acordo com o último número inteiro e seguindo a mascara desejada;</li>
-                <p>
-                    <img id="thumbnail01" src="./imgm03/image0310.jpg" alt="Thumbnail Image"
-                        onclick="openImage('./imgm03/image0310.jpg')">
-                </p>
-            
+                <li> Sempre que forçar a atribuição de uma nova numeração esse valor deve respeitar a máscara numérica;</li>
+                <p> </p>
+                <li>Ao forçar a numeração o valor a colocar deve ser sempre o anterior ao valor desejado, se desejar que o número de
+                    cliente/fornecedor seja o <strong>"8002"</strong> deve colocar na <strong>box "Forçar Último Número Gerado"</strong>
+                    o valor <strong>"8001"</strong>;
+                </li>
+                <p> </p>
+                <li>Ter em atenção que independentemente da máscara usada na numeração de <strong>"Clientes"</strong> e
+                    <strong>"Fornecedores"</strong>
+                    o <strong>número da CONTA CBL </strong> será sempre o número inteiro usado na máscara;</li>
+            </ol>
                 <p> </p>
             
     </section>
